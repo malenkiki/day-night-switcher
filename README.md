@@ -53,6 +53,8 @@ Note: you can download the script from Github, or you can get it using NPM:
 npm i day-night-switcher
 ```
 
+See the NPM page project: <https://www.npmjs.com/package/day-night-switcher>
+
 ## Styling switcher
 
 As switcher uses specific attribute, you may define some style to change it and show its status.
