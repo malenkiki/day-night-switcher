@@ -1,0 +1,24 @@
+{
+  "name": "day-night-switcher",
+  "version": "0.9.0",
+  "description": "Little script to easily switch a website in night mode or day mode using CSS alternate themes.",
+  "main": "daynight.min.js",
+  "keywords": [
+    "switcher",
+    "css",
+    "night",
+    "day",
+    "dark",
+    "light"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/malenkiki/day-night-switcher"
+  },
+  "bugs": {
+    "url": "https://github.com/malenkiki/day-night-switcher/issues"
+  },
+  "author": "Michel Petit <petit.michel@gmail.com>",
+  "license": "MIT"
+}
+
