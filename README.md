@@ -17,8 +17,8 @@ Before continue, you can see a live example on Codepen: <https://codepen.io/male
 In your HTML, add into `HEAD` followings:
 
 ```html
-&lt;link rel="alternate stylesheet" data-daynight-css="night" type="text/css" href="night.css"&gt;
-&lt;link rel="stylesheet" data-daynight-css="day" type="text/css" href="day.css"&gt;
+<link rel="alternate stylesheet" data-daynight-css="night" type="text/css" href="night.css">
+<link rel="stylesheet" data-daynight-css="day" type="text/css" href="day.css">
 ```
 
 The important part is to use attribute `data-daynight-css` on CSS used for night and day times.
@@ -32,7 +32,7 @@ Note: more than one CSS per moment is possible, just do not forget the `data-nig
 To switch from day to night or night to day, you must define at least one switcher, for example using a link:
 
 ```html
-&lt;a data-daynight-moment="day" href="#foo"&gt;Switch to night theme&lt;/a&gt;
+<a data-daynight-moment="day" href="#foo">Switch to night theme</a>
 ```
 
 Note that attribute `data-daynight-moment` must have actual desired moment.
@@ -42,7 +42,7 @@ Note that attribute `data-daynight-moment` must have actual desired moment.
 Add script at bottom of the `BODY` tag:
 
 ```html
-&lt;script src="/path/to/daynight.min.js"&gt;&lt;/script&gt;
+<script src="/path/to/daynight.min.js"></script>
 ```
 
 And that’s all, no more work to enable this feature!
