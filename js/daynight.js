@@ -74,8 +74,19 @@ SOFTWARE.
         }
     }
 
+
+    function avoidFlash(currentChoice) {
+        var body = document.querySelector('body');
+        if (currentChoice === 'day') {
+            body.style.backgroundColor = '#eeeeee';
+        } else {
+            body.style.backgroundColor = '#222222';
+        }
+    }
+
     if (currentChoice) {
         daynight('enable', currentChoice);
+        avoidFlash(currentChoice);
         [].forEach.call(switchers, function (s) {
             s.dataset.daynightMoment = currentChoice;
         }); 
@@ -88,9 +99,11 @@ SOFTWARE.
 
             if (s.dataset.daynightMoment === 'day'){
                 localStorage.setItem('daynight','night');
+                avoidFlash('night');
                 daynight('disable', 'day');
             } else if(s.dataset.daynightMoment === 'night') {
                 localStorage.setItem('daynight','day');
+                avoidFlash('day');
                 daynight('enable', 'day');
             }
 
