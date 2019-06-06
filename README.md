@@ -71,8 +71,22 @@ An example could be:
     }
 
     a[data-daynight-moment*="day"]:before {
-        content: "☀️";
+        content: "🌞";
     }
+```
+
+## Avoiding Flash changing all CSS
+
+It is better to use two CSS files to define only colors changes and keep apart other CSS features. If not, you get a "flash" while changing CSS day/night.
+
+To avoid it, you could add attribut `data-daynight-base-colors` to `SCRIPT` tag containing call to JS file. Its value is a string with colors values separated by period. First is for day, and second is for night. This colors are set for `BODY` tag before switching CSS file.
+
+Usefull while browsing the site, no "white flash" on changing page in dark mode.
+
+Exemple:
+
+```html
+<script src="/path/to/daynight.min.js" data-daynight-base-colors="#fff;#222"></script>
 ```
 
 

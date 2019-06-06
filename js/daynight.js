@@ -76,11 +76,23 @@ SOFTWARE.
 
 
     function avoidFlash(currentChoice) {
+        var baseColors = document.querySelector('[data-daynight-base-colors]');
+
+        if (!baseColors) {
+            return false;
+        }
+
+        baseColors = baseColors.dataset.daynightBaseColors.split(/;/);
+
+        if (baseColors.length !== 2) {
+            return  false;
+        }
+
         var body = document.querySelector('body');
         if (currentChoice === 'day') {
-            body.style.backgroundColor = '#eeeeee';
+            body.style.backgroundColor = baseColors[0];
         } else {
-            body.style.backgroundColor = '#222222';
+            body.style.backgroundColor = baseColors[1];
         }
     }
 
